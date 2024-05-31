@@ -4,6 +4,8 @@ info:
   description: API Backend for Architect Website
   version: 1.0.0
 servers:
+  - url: http://localhost:5678/api/
+  - url: https://ocr-portfolio-architecte-sophie-bluel-p6.onrender.com/api/
   - url: https://ocr-portfolio-architecte-sophie-bluel-p6.onrender.com:10000/api/
 paths:
   /users/login:
