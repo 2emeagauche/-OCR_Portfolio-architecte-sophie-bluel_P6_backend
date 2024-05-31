@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors')
 
+
 require('dotenv').config();
 const helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express')
@@ -10,7 +11,9 @@ const swaggerDocs = yaml.load('swagger.yaml')
 const app = express()
 // app.use(cors())
 app.use(cors({
-  origin: 'https://2emeagauche.github.io/OCR_Portfolio-architecte-sophie-bluel_P6/FrontEnd/'
+  "origin": 'https://2emeagauche.github.io/OCR_Portfolio-architecte-sophie-bluel_P6/FrontEnd/',
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "allowedHeaders": "Content-Type,Authorization"
 }));
 
 app.use(express.json())
