@@ -4,6 +4,7 @@ const cors = require('cors')
 
 
 
+
 require('dotenv').config();
 const helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express')
@@ -11,11 +12,7 @@ const yaml = require('yamljs')
 const swaggerDocs = yaml.load('swagger.yaml')
 const app = express()
 // app.use(cors())
-app.use(cors({
-  "origin": true,
-  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-  "allowedHeaders": "Content-Type,Authorization"
-}));
+app.use(cors());
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
