@@ -5,8 +5,8 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:5678/api/
-  - url: https://ocr-portfolio-architecte-sophie-bluel-p6.onrender.com/api/
-  - url: https://ocr-portfolio-architecte-sophie-bluel-p6.onrender.com:10000/api/
+  - url: https://web-production-ded9.up.railway.app/api/
+  - url: https://web-production-ded9.up.railway.app:8080/api/
 paths:
   /users/login:
     post:
