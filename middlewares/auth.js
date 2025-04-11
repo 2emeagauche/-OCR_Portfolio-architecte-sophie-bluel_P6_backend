@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-
+//token given by Railway.app
 module.exports = (req, res, next) => {
 	try {
 		console.log(req.headers.authorization);
